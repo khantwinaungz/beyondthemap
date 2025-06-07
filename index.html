@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>James Clear Inspired Site</title>
+  <title>Khant's Journey</title>
   <style>
     body {
       font-family: 'Helvetica Neue', sans-serif;
@@ -13,20 +13,43 @@
       color: #333;
     }
 
+    /* Navigation Bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .social-icons a {
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    .navbar .social-icons img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .navbar .home-button a {
+      text-decoration: none;
+      color: #0070f3;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 8px 12px;
+      border: 1px solid #0070f3;
+      border-radius: 4px;
+    }
+
     header {
       background: #f9f9f9;
       padding: 60px 20px;
       text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: #666;
     }
 
     .cta {
@@ -57,24 +80,6 @@
       margin: auto;
     }
 
-    .section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-    }
-
-    .article {
-      margin-bottom: 20px;
-    }
-
-    .article h3 {
-      margin: 0;
-      font-size: 1.4rem;
-    }
-
-    .article p {
-      color: #555;
-    }
-
     footer {
       background: #f1f1f1;
       text-align: center;
@@ -86,8 +91,62 @@
 </head>
 <body>
 
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="social-icons">
+      <a href="https://instagram.com/yourusername" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+      <a href="https://facebook.com/yourusername" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+      </a>
+      <a href="https://tiktok.com/@yourusername" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+      </a>
+    </div>
+    <div class="home-button">
+      <a href="index.html">Khant's Journey</a>
+    </div>
+  </div>
+
+  <!-- Header Section -->
   <header>
     <h1>Build Better Habits</h1>
     <p>Get proven strategies to improve your habits and live a better life.</p>
     <div class="cta">
-      <input
+      <input type="email" id="emailInput" placeholder="Enter your email" />
+      <button onclick="subscribe()">Join Now</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <section class="section">
+    <h2>Featured Articles</h2>
+    <div class="article">
+      <h3>Atomic Habits: An Easy & Proven Way to Build Good Habits</h3>
+      <p>Learn how small changes can lead to remarkable results over time.</p>
+    </div>
+    <div class="article">
+      <h3>The 1% Rule: Why Small Improvements Matter</h3>
+      <p>Discover how marginal gains can compound into massive success.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Khant's Journey. All rights reserved.
+  </footer>
+
+  <script>
+    function subscribe() {
+      const email = document.getElementById("emailInput").value;
+      if (email) {
+        alert(`Thanks for subscribing, ${email}!`);
+      } else {
+        alert("Please enter a valid email address.");
+      }
+    }
+  </script>
+
+</body>
+</html>
