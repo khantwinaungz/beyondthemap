@@ -1,1 +1,99 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .social-icons a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.navbar .social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.navbar .home-button a {
+  text-decoration: none;
+  color: #0070f3;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border: 1px solid #0070f3;
+  border-radius: 4px;
+}
+
+header {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta {
+  margin-top: 20px;
+}
+
+.cta input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  max-width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cta button {
+  padding: 10px 20px;
+  background: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.article {
+  margin-bottom: 20px;
+}
+
+.article h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.article p {
+  color: #555;
+}
+
+footer {
+  background: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #777;
+}
