@@ -1,5 +1,7 @@
+
 function subscribe() {
-  const email = document.getElementById("emailInput").value;
+  const emailInput = document.querySelector('.footer-section input[type="email"]');
+  const email = emailInput ? emailInput.value : '';
   if (email) {
     alert(`Thanks for subscribing, ${email}!`);
   } else {
