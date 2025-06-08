@@ -3,7 +3,10 @@ const slides = document.querySelectorAll('.slide');
 
 function showSlide(index) {
     slides.forEach((slide, i) => {
-        slide.style.display = i === index ? 'block' : 'none';
+        slide.classList.remove('active');
+        if (i === index) {
+            slide.classList.add('active');
+        }
     });
 }
 
