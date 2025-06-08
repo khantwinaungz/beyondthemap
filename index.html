@@ -6,8 +6,13 @@
   <title>Khant Journey</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    margin: 0;
+    * {
+      margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
       height: 100%;
       font-family: 'Montserrat', sans-serif;
       background: url('image/aurora.png') no-repeat center center fixed;
@@ -33,9 +38,7 @@
       font-size: 24px;
       font-weight: 700;
       letter-spacing: 2px;
-    }
-
-    .navbar .nav-links {
+   nav-links {
       display: flex;
       gap: 25px;
     }
@@ -56,6 +59,9 @@
       border-radius: 20px;
       border: none;
       font-size: 14px;
+      background: transparent;
+      border: 1px solid white;
+      color: white;
     }
 
     .navbar .search-icon {
@@ -124,6 +130,9 @@
       margin-bottom: 10px;
       font-size: 14px;
       width: 100%;
+      background: transparent;
+      border: 1px solid white;
+      color: white;
     }
 
     .footer-section button {
@@ -148,7 +157,7 @@
         <a href="#">Contact</a>
       </div>
       <div class="search-container">
-        <input type="text" placeholder="Enter keyword..." style="background: transparent; border: 1px solid white; color: white;" />
+        <input type="text" placeholder="Enter keyword..." />
         <img src="image/magnifer.png" alt="Search" class="search-icon" />
       </div>
     </div>
@@ -191,7 +200,7 @@
       <div class="footer-section">
         <h3>Subscribe to New Blog Posts</h3>
         <form>
-          <input type="email" placeholder="Enter your email address" style="background: transparent; border: 1px solid white; color: white;" />
+          <input type="email" placeholder="Enter your email address" />
           <button type="submit">Subscribe</button>
         </form>
       </div>
