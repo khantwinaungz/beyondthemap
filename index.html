@@ -1,14 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AROWWAI INDUSTRIES</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body, html {
+    body {
       margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Montserrat', sans-serif;
       background: url('image/aurora.png') no-repeat center center fixed;
       background-size: cover;
       color: white;
@@ -16,64 +17,112 @@
 
     .navbar {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      padding: 15px 30px;
-      background-color: rgba(0, 0, 0, 0.4);
+      align-items: center;
+      padding: 20px 40px;
+      background-color: rgba(0, 0, 0, 0); /* Fully transparent */
     }
 
     .navbar .logo {
       font-size: 24px;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
+      font-weight: 700;
+      letter-spacing: 2px;
     }
 
     .navbar .nav-links {
       display: flex;
-      gap: 20px;
+      gap: 25px;
     }
 
     .navbar .nav-links a {
-      color: white;
       text-decoration: none;
+      color: white;
+      font-weight: 500;
       font-size: 16px;
     }
 
-    .navbar .search-bar {
-      display: flex;
-      align-items: center;
-      background-color: white;
-      border-radius: 20px;
-      padding: 5px 10px;
+    .navbar .search-container {
+      position: relative;
     }
 
-    .navbar .search-bar input {
+    .navbar input[type="text"] {
+      padding: 8px 35px 8px 10px;
+      border-radius: 20px;
       border: none;
-      outline: none;
-      padding: 5px;
       font-size: 14px;
     }
 
-    .navbar .search-bar img {
+    .navbar .search-icon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
       height: 16px;
-      margin-left: 5px;
     }
 
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
+    footer.footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 40px;
+      background: url('image/aurora.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
     }
 
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
+    .footer-section {
+      flex: 1 1 200px;
+      margin: 20px;
     }
 
-    .hero p {
-      font-size: 20px;
-      max-width: 600px;
-      margin: 0 auto;
+    .footer-logo {
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    .footer-description {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .social-icons img {
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 10px;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-section ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-section input[type="email"] {
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      width: 100%;
+    }
+
+    .footer-section button {
+      padding: 10px;
+      background-color: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 100%;
     }
   </style>
 </head>
@@ -88,61 +137,55 @@
       <a href="#">Gallery</a>
       <a href="#">Contact</a>
     </div>
-    <div class="search-bar">
+    <div class="search-container">
       <input type="text" placeholder="Enter keyword..." />
-      <img src="image/search-icon.png" alt="Search" />
+      <img src="image/magnifier.png" alt="Search" class="search-icon" />
     </div>
   </div>
 
-  <div class="hero">
-    <h1>Welcome to AROWWAI</h1>
-    <p>Experience the magic of the aurora under the northern skies</p>
-  </div>
-
-<footer class="footer" style="background: url('image/aurora.png') no-repeat center center fixed; background-size: cover;">
-  <div class="footer-section">
-    <img src="logo.png" alt="Logo" class="footer-logo" />
-    <p class="footer-description">
-      MAP Authority's patent pending software is the only tool on the market to truly enforce your MAP pricing on Amazon.
-    </p>
-    <div class="social-icons">
-      <img src="facebook.png" alt="Facebook" />
-      <img src="instagram.png" alt="Instagram" />
-      <img src="linkedin.png" alt="LinkedIn" />
-      <img src="twitter.png" alt="Twitter" />
+  <footer class="footer">
+    <div class="footer-section">
+      <img src="logo.png" alt="Logo" class="footer-logo" />
+      <p class="footer-description">
+        MAP Authority's patent pending software is the only tool on the market to truly enforce your MAP pricing on Amazon.
+      </p>
+      <div class="social-icons">
+        <img src="facebook.png" alt="Facebook" />
+        <img src="instagram.png" alt="Instagram" />
+        <img src="linkedin.png" alt="LinkedIn" />
+        <img src="twitter.png" alt="Twitter" />
+      </div>
     </div>
-  </div>
 
-  <div class="footer-section">
-    <h3>Contact</h3>
-    <p>Email: info@mapauthority.com</p>
-    <p>Live Chat</p>
-    <p>4210 Flagstaff Cove<br>Fort Wayne, IN 46815</p>
-  </div>
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>Email: info@mapauthority.com</p>
+      <p>Live Chat</p>
+      <p>4210 Flagstaff Cove<br>Fort Wayne, IN 46815</p>
+    </div>
 
-  <div class="footer-section">
-    <h3>Navigation</h3>
-    <ul>
-      <li><a href="#">Demo</a></li>
-      <li><a href="#">Overview</a></li>
-      <li><a href="#">Pricing</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">For Retailers</a></li>
-      <li><a href="#">Support Hub</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Sign In</a></li>
-    </ul>
-  </div>
+    <div class="footer-section">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="#">Demo</a></li>
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">For Retailers</a></li>
+        <li><a href="#">Support Hub</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Sign In</a></li>
+      </ul>
+    </div>
 
-  <div class="footer-section">
-    <h3>Subscribe to New Blog Posts</h3>
-    <form>
-      <input type="email" placeholder="Enter your email address" />
-      <button type="submit">Subscribe</button>
-    </form>
-  </div>
-</footer>
+    <div class="footer-section">
+      <h3>Subscribe to New Blog Posts</h3>
+      <form>
+        <input type="email" placeholder="Enter your email address" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </footer>
 
 </body>
 </html>
-
