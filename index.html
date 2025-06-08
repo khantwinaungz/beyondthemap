@@ -3,55 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Khant's Journey</title>
-  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image rgba(0, 0, 0, 0.5);
+    }
+    .logo {
+      height: 50px;
+    }
+    .search-bar {
+      flex-grow: 1;
+      margin: 0 20px;
+    }
+    .search-bar input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .social-media-icons img {
+      height: 30px;
+      margin-left: 10px;
+    }
+    nav {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+    .contact-subscribe {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .contact-subscribe h2 {
+      margin-bottom: 20px;
+    }
+    .contact-subscribe input[type="email"] {
+      padding: 10px;
+      font-size: 16px;
+      width: 250px;
+    }
+    .contact-subscribe button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    footer .logo {
+      height: 40px;
+    }
+    footer p {
+      margin: 0;
+    }
+    footer .social-media-icons img {
+      height: 25px;
+      margin-left: 10px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <div class="navbar">
-    <div class="social-icons">
-      <a href="https://instagram.com/kai.explorer" target="_blank">
-        <img src="image/instagram.png" alt="Instagram">
-      </a>
-      <a href="https://facebook.com/kai.explorer" target="_blank">
-        <img src="image/facebook.png" alt="Facebook">
-      </a>
-      <a href="https://youtube.com/@yourchannel" target="_blank">
-        <img src="image/youtube.png" alt="YouTube">
-      </a>
-      <a href="https://x.com/kaidotexplorer" target="_blank">
-        <img src="image/x.png" alt="X (Twitter)">
-      </a>
-    </div>
-    <div class="home-button">
-      <a href="index.html">Khant's Journey</a>
-    </div>
+<header>
+  <img src="logo.png" alt="Logo" class="logo" />
+  <div class="search-bar">
+    <input type="text" placeholder="Search..." />
   </div>
+  <div class="social-media-icons">
+    <img src="facebook.png" alt="Facebook" />
+    <img src="twitter.png" alt="Twitter" />
+    <img src="instagram.png" alt="Instagram" />
+  </div>
+</header>
 
-  <!-- Header Section -->
-  <header>
-    <h1>Build Better Habits</h1>
-    <p>Get proven strategies to improve your habits and live a better life.</p>
-  </header>
+<nav>
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="destinations.html">Destinations</a>
+  <a href="countries.html">Countries</a>
+  <a href="contact.html">Contact</a>
+  <a href="search.html">Search</a>
+</nav>
 
-  <!-- Main Content -->
-  <section class="section">
-    <h2>Featured Articles</h2>
-    <div class="article">
-      <h3>Atomic Habits: An Easy & Proven Way to Build Good Habits</h3>
-      <p>Learn how small changes can lead to remarkable results over time.</p>
-    </div>
-    <div class="article">
-      <h3>The 1% Rule: Why Small Improvements Matter</h3>
-      <p>Discover how marginal gains can compound into massive success.</p>
-    </div>
-  </section>
+<div class="contact-subscribe">
+  <h2>Contact Address</h2>
+  <p>123 Main Street, City, Country</p>
+  <h2>Subscribe To New Blog Posts</h2>
+  <form>
+    <input type="email" placeholder="Enter your email" />
+    <button type="submit">Subscribe</button>
+  </form>
+</div>
 
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 Khant's Journey. All rights reserved.
-  </footer>
+<footer>
+  <img src="logo.png" alt="Logo" class="logo" />
+  <p>© 2025 All Rights Reserved</p>
+  <div class="social-media-icons">
+    <img src="facebook.png" alt="Facebook" />
+    <img src="twitter.png" alt="Twitter" />
+    <img src="instagram.png" alt="Instagram" />
+  </div>
+</footer>
 
 </body>
 </html>
