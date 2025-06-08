@@ -1,10 +1,26 @@
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
 
-function subscribe() {
-  const emailInput = document.querySelector('.footer-section input[type="email"]');
-  const email = emailInput ? emailInput.value : '';
-  if (email) {
-    alert(`Thanks for subscribing, ${email}!`);
-  } else {
-    alert("Please enter a valid email address.");
-  }
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.style.display = i === index ? 'block' : 'none';
+    });
 }
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+}
+
+function goToPage(page) {
+    window.location.href = page;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    showSlide(currentSlide);
+});
