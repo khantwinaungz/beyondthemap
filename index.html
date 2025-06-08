@@ -3,59 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Website</title>
+  <title>MapAuthority</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-image: rgba(0, 0, 0, 0.5);
+      background-color: #f4f4f4;
     }
-    .logo {
-      height: 50px;
-    }
-    .search-bar {
-      flex-grow: 1;
-      margin: 0 20px;
-    }
-    .search-bar input[type="text"] {
-      width: 100%;
-      padding: 10px;
-      font-size: 16px;
-    }
-    .social-media-icons img {
-      height: 30px;
-      margin-left: 10px;
-    }
-    nav {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 10px 0;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: white;
-      font-size: 18px;
-    }
-    .contact-subscribe {
-      text-align: center;
-      padding: 50px 20px;
-      background-color: rgba(0, 0, 0, 0.6);
-    }
-    .contact-subscribe h2 {
-      margin-bottom: 20px;
-    }
-    .contact-subscribe input[type="email"] {
-      padding: 10px;
-      font-size: 16px;
-      width: 250px;
-    }
-    .contact-subscribe button {
-      padding: 10px 20px;
-      font-size: 16px;
-      margin-left: 10px;
-    }
-    .custom-footer {
+    .footer {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -69,6 +24,10 @@
     }
     .footer-logo {
       height: 50px;
+      margin-bottom: 10px;
+    }
+    .footer-description {
+      font-size: 14px;
       margin-bottom: 10px;
     }
     .social-icons img {
@@ -109,41 +68,12 @@
 </head>
 <body>
 
-<header>
-  <img src="logo.png" alt="Logo" class="logo" />
-  <div class="search-bar">
-    <input type="text" placeholder="Search..." />
-  </div>
-  <div class="social-media-icons">
-    <img src="facebook.png" alt="Facebook" />
-    <img src="twitter.png" alt="Twitter" />
-    <img src="instagram.png" alt="Instagram" />
-  </div>
-</header>
-
-<nav>
-  <a href="home.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="destinations.html">Destinations</a>
-  <a href="countries.html">Countries</a>
-  <a href="contact.html">Contact</a>
-  <a href="search.html">Search</a>
-</nav>
-
-<div class="contact-subscribe">
-  <h2>Contact Address</h2>
-  <p>123 Main Street, City, Country</p>
-  <h2>Subscribe To New Blog Posts</h2>
-  <form>
-    <input type="email" placeholder="Enter your email" />
-    <button type="submit">Subscribe</button>
-  </form>
-</div>
-
-<footer class="custom-footer">
-  <div class="footer-section about">
+<footer class="footer">
+  <div class="footer-section">
     <img src="logo.png" alt="Logo" class="footer-logo" />
-    <p>MAP Authority's patent pending software is the only tool on the market to truly enforce your MAP pricing on Amazon.</p>
+    <p class="footer-description">
+      MAP Authority's patent pending software is the only tool on the market to truly enforce your MAP pricing on Amazon.
+    </p>
     <div class="social-icons">
       <img src="facebook.png" alt="Facebook" />
       <img src="instagram.png" alt="Instagram" />
@@ -152,14 +82,14 @@
     </div>
   </div>
 
-  <div class="footer-section contact">
+  <div class="footer-section">
     <h3>Contact</h3>
     <p>Email: info@mapauthority.com</p>
     <p>Live Chat</p>
     <p>4210 Flagstaff Cove<br>Fort Wayne, IN 46815</p>
   </div>
 
-  <div class="footer-section navigation">
+  <div class="footer-section">
     <h3>Navigation</h3>
     <ul>
       <li><a href="#">Demo</a></li>
@@ -173,7 +103,7 @@
     </ul>
   </div>
 
-  <div class="footer-section subscribe">
+  <div class="footer-section">
     <h3>Subscribe to New Blog Posts</h3>
     <form>
       <input type="email" placeholder="Enter your email address" />
