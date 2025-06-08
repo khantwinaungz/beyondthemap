@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-image rgba(0, 0, 0, 0.5);
+      background-image: rgba(0, 0, 0, 0.5);
     }
     .logo {
       height: 50px;
@@ -55,22 +55,55 @@
       font-size: 16px;
       margin-left: 10px;
     }
-    footer {
+    .custom-footer {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: #1a1a1a;
+      color: white;
+      padding: 40px 20px;
     }
-    footer .logo {
-      height: 40px;
+    .footer-section {
+      flex: 1 1 200px;
+      margin: 20px;
     }
-    footer p {
-      margin: 0;
+    .footer-logo {
+      height: 50px;
+      margin-bottom: 10px;
     }
-    footer .social-media-icons img {
-      height: 25px;
-      margin-left: 10px;
+    .social-icons img {
+      height: 24px;
+      margin-right: 10px;
+    }
+    .footer-section h3 {
+      margin-bottom: 10px;
+    }
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-section ul li {
+      margin-bottom: 8px;
+    }
+    .footer-section ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    .footer-section form {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-section input[type="email"] {
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .footer-section button {
+      padding: 10px;
+      background-color: red;
+      color: white;
+      border: none;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -107,13 +140,45 @@
   </form>
 </div>
 
-<footer>
-  <img src="logo.png" alt="Logo" class="logo" />
-  <p>© 2025 All Rights Reserved</p>
-  <div class="social-media-icons">
-    <img src="facebook.png" alt="Facebook" />
-    <img src="twitter.png" alt="Twitter" />
-    <img src="instagram.png" alt="Instagram" />
+<footer class="custom-footer">
+  <div class="footer-section about">
+    <img src="logo.png" alt="Logo" class="footer-logo" />
+    <p>MAP Authority's patent pending software is the only tool on the market to truly enforce your MAP pricing on Amazon.</p>
+    <div class="social-icons">
+      <img src="facebook.png" alt="Facebook" />
+      <img src="instagram.png" alt="Instagram" />
+      <img src="linkedin.png" alt="LinkedIn" />
+      <img src="twitter.png" alt="Twitter" />
+    </div>
+  </div>
+
+  <div class="footer-section contact">
+    <h3>Contact</h3>
+    <p>Email: info@mapauthority.com</p>
+    <p>Live Chat</p>
+    <p>4210 Flagstaff Cove<br>Fort Wayne, IN 46815</p>
+  </div>
+
+  <div class="footer-section navigation">
+    <h3>Navigation</h3>
+    <ul>
+      <li><a href="#">Demo</a></li>
+      <li><a href="#">Overview</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">For Retailers</a></li>
+      <li><a href="#">Support Hub</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Sign In</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-section subscribe">
+    <h3>Subscribe to New Blog Posts</h3>
+    <form>
+      <input type="email" placeholder="Enter your email address" />
+      <button type="submit">Subscribe</button>
+    </form>
   </div>
 </footer>
 
