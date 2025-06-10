@@ -6,11 +6,11 @@
 }
 
 :root {
-    --primary-color: #ff6b6b;
-    --secondary-color: #4ecdc4;
-    --dark-color: #292f36;
+    --primary-color: #6ea2ef;
+    --secondary-color: #88dcf5;
+    --dark-color: #b1b1b1;
     --light-color: #f7f9f9;
-    --gray-color: #6c757d;
+    --gray-color: rgb(248, 245, 245);
 }
 
 body {
@@ -112,7 +112,7 @@ nav ul li a:hover:after {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+                url(image/aurora.png);
     background-size: cover;
     background-position: center;
     display: flex;
