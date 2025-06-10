@@ -108,6 +108,44 @@ nav ul li a:hover:after {
     cursor: pointer;
 }
 
+
+/* Dropdown styles */
+nav ul li.dropdown {
+    position: relative;
+}
+
+nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+}
+
+nav ul li .dropdown-menu li {
+    display: block;
+}
+
+nav ul li .dropdown-menu li a {
+    padding: 10px 20px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+nav ul li .dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+}
+
+nav ul li.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
 /* Hero Section */
 .hero {
     height: 100vh;
