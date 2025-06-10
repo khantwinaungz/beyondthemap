@@ -8,9 +8,9 @@
 :root {
     --primary-color: #5eb3dd;
     --secondary-color: #2562bf;
-    --dark-color: #1c1b1b;
+    --dark-color: #030303;
     --light-color: #f7f9f9;
-    --gray-color: rgb(31, 30, 30);
+    --gray-color: rgb(7, 6, 6);
 }
 
 body {
