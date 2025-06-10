@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations | TravelBucket</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .flag-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px;
+            padding: 60px 0;
+        }
+        .flag-card {
+            text-align: center;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .flag-card:hover {
+            transform: translateY(-10px);
+        }
+        .flag-card img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .flag-card h3 {
+            font-size: 1.2rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">TravelBucket</a>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <span class="nav-label">Destinations</span>
+                    <ul class="dropdown-menu">
+                        <li><a href="thailand.html">Thailand</a></li>
+                        <li><a href="philippines.html">Philippines</a></li>
+                        <li><a href="japan.html">Japan</a></li>
+                        <li><a href="vietnam.html">Vietnam</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Travel Tips</a></li>
+                <li><a href="#">Countries</a></li>
+                <li><a href="#">Photography</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+<section class="hero" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e'); background-size: cover;">
+    <div class="hero-content">
+        <h1>Explore Our Destinations</h1>
+        <p>Choose a country and start your adventure</p>
+    </div>
+</section>
+
+<section class="featured-posts">
+    <div class="container">
+        <h2>Popular Countries</h2>
+        <div class="flag-grid">
+            <a href="thailand.html" class="flag-card">
+                <img src="https://flagcdn.com/w320/th.png" alt="Thailand Flag">
+                <h3>Thailand</h3>
+            </a>
+            <a href="philippines.html" class="flag-card">
+                <img src="https://flagcdn.com/w320/ph.png" alt="Philippines Flag">
+                <h3>Philippines</h3>
+            </a>
+            <a href="japan.html" class="flag-card">
+                <img src="https://flagcdn.com/w320/jp.png" alt="Japan Flag">
+                <h3>Japan</h3>
+            </a>
+            <a href="vietnam.html" class="flag-card">
+                <img src="https://flagcdn.com/w320/vn.png" alt="Vietnam Flag">
+                <h3>Vietnam</h3>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>TravelBucket</h3>
+                <p>Sharing inspiring travel stories and bucket list destinations since 2023.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="#">Travel Guides</a></li>
+                    <li><a href="#">Countries</a></li>
+                    <li><a href="#">Bucket Lists</a></li>
+                    <li><a href="#">Photography Tips</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 TravelBucket. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
 
