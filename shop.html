@@ -1,39 +1,5 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Navigation Bar -->
-<header>
-    <div class="container">
-        <div class="logo">
-            <a href="index.html">TravelBucket</a>
-        </div>
-        <nav>
-            <ul>
- <li class="dropdown">
-    <a href="#" class="nav-label">Countries</a>
-    <ul class="dropdown-menu">
-        <li><a href="singapore.html">Singapore</a></li>
-        <li><a href="thailand.html">Thailand</a></li>
-    </ul>
-</li>
-
-<!-- Navigation Bar -->
-                
-<li class="dropdown">
-    <a href="#" class="nav-label">Planning</a>
-    <ul class="dropdown-menu">
-        <li><a href="https://www.booking.com" target="_blank">Booking</a></li>
-        <li><a href="https://www.skyscanner.com" target="_blank">Air Ticket</a></li>
-    </ul>
-</li> 
-
-                <li><a href="photography.html" class="nav-label">Photography</a></li>
-                <li><a href="shop.html" class="nav-label"><i class="fas fa-store"></i> Shop</a></li>
-                <li><a href="about.html" class="nav-label">About</a></li>
-
-            </ul>  
-
 <head>
     <meta charset="UTF-8">
     <title>TravelBucket | Shop</title>
@@ -42,21 +8,78 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .logo a {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border: 1px solid #ddd;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            z-index: 1000;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu li a {
+            display: block;
+            padding: 10px 15px;
+            color: black;
+        }
+        .dropdown-menu li a:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Shop content */
+        .shop-content {
+            padding: 40px 20px;
         }
         .product-grid {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
+            justify-content: center;
         }
         .product-card {
             border: 1px solid #ddd;
             border-radius: 8px;
             padding: 16px;
             width: 300px;
-        }
-        .product-card h3 {
-            margin-top: 0;
+            text-align: center;
         }
         .product-card i {
             font-size: 24px;
@@ -76,8 +99,36 @@
         }
     </style>
 </head>
-
 <body>
+
+</header> 
+    <div class="logo">
+        <a href="index.html">TravelBucket</a>
+    </div>
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="#" class="nav-label">Countries</a>
+                <ul class="dropdown-menu">
+                    <li><a href="singapore.html">Singapore</a></li>
+                    <li><a href="thailand.html">Thailand</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="nav-label">Planning</a>
+                <ul class="dropdown-menu">
+                    <li><a href="https://www.booking.com" target="_blank">Booking</a></li>
+                    <li><a href="https://www.skyscanner.com" target="_blank">Air Ticket</a></li>
+                </ul>
+            </li>
+            <li><a href="photography.html" class="nav-label">Photography</a></li>
+            <li><a href="shop.html" class="nav-label"><i class="fas fa-store"></i> Shop</a></li>
+            <li><a href="about.html" class="nav-label">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="shop-content">
     <h1>TravelBucket Shop</h1>
     <div class="product-grid">
         <div class="product-card">
@@ -93,5 +144,7 @@
             <a href="image/thailand.pdf" class="download-btn" target="_blank">Download PDF</a>
         </div>
     </div>
+</div>
+
 </body>
 </html>
